@@ -1,25 +1,18 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <h1>Welcome Home</h1>
-    </v-app-bar>
+    <Header />
     <v-main>
-      <Home />
+      <h1>Landing Page</h1>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Home from './components/Home'
+import Header from './components/Header'
 export default {
   name: 'App',
-
   components: {
-    Home
+    Header
   },
 
   data: () => ({
